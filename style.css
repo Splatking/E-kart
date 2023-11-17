@@ -1,0 +1,42 @@
+body {
+    background-image: url("./src/Images/cart.png");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: hamburgerBold;
+    src: url("./src/Fonts/hamburg-bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hamburger;
+    src: url("./src/Fonts/hamburg-regular.woff2") format("woff2");
+}
+
+.LoginGUI h1 {
+    font-family: hamburgerBold;
+}
+
+.LoginGUI p {
+    font-family: hamburger;
+}
+
+.LoginGUI {
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    border-radius: 25px;
+    width: 30%;
+    height: 25vh;
+    margin-left: 35%;
+    margin-top: 37.5vh;
+}
+
+#UserLoginValue, #PassLoginValue {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: lightskyblue;
+    color: lightskyblue;
+}
