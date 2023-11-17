@@ -1,1 +1,60 @@
+@font-face {
+    font-family: hamburgerBold;
+    src: url("../Fonts/hamburg-bold.woff2") format("woff2");
+    font-weight: bold;
+}
+ 
+@font-face {
+    font-family: hamburger;
+    src: url("../Fonts/hamburg-regular.woff2") format("woff2");
+}
 
+body {
+    background-color: black;
+    font-family: hamburger;
+}
+ 
+
+.Menu {
+    text-align: center;
+    position: fixed;
+    max-width: 20%;
+    height: 100vh;
+}
+
+.Menu input {
+    width: 100%;
+    border-bottom-right-radius: 25px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: hamburger;
+}
+
+.Menu a:hover {
+    color: lightskyblue;
+}
+
+#Uitloggen {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: hamburger;
+}
+
+#Uitloggen:hover {
+    color: red;
+}
+
+#titletext {
+    color: lightskyblue;
+}
+
+#SiteInformation {
+    color: white;
+}
