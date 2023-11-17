@@ -1,0 +1,42 @@
+body {
+    background-image: url("../../Images/cart.png");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: hamburgerBold;
+    src: url("../../Fonts/hamburg-bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hamburger;
+    src: url("../../Fonts/hamburg-regular.woff2") format("woff2");
+}
+
+.CreatieGUI {
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    border-radius: 25px;
+    width: 30%;
+    height: 35vh;
+    margin-left: 35%;
+    margin-top: 32.5vh;
+}
+
+.CreatieGUI h1 {
+    font-family: hamburgerBold;
+}
+
+.CreatieGUI p {
+    font-family: hamburger;
+}
+
+#UserLoginValue, #RekeningValue, #KaartValue, #PassLoginValue, #PassLoginValue2, #EmailValue {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: lightskyblue;
+    color: lightskyblue;
+}

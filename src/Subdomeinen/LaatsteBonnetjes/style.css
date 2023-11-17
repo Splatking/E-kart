@@ -1,0 +1,51 @@
+@font-face {
+    font-family: hamburgerBold;
+    src: url("../../Fonts/hamburg-bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hamburger;
+    src: url("../../Fonts/hamburg-regular.woff2") format("woff2");
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: lightskyblue;
+    border-radius: 10px;
+}
+
+.ItemScreen {
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 10vh;
+    margin-left: 30%;
+    max-height: 80vh;
+    width: 60%;
+}
+
+.ItemScreen h1 {
+    font-family: hamburgerBold;
+}
+
+.ItemScreen p {
+    font-family: hamburger;
+}
+
+.Item {
+    width: 100%;
+}
