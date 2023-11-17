@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>E-kart scan</title>
+      <link rel="icon" href="../../Images/Logo.png">
+      <link rel="stylesheet" href="./style.css">
+    </head>
+    <body></body>
+    <script src="html5-qrcode.min.js"></script>
+    <div class="row">
+        <div class="col">
+          <div style="width:500px;" id="reader"></div>
+        </div>
+        <div class="col" style="padding:30px;">
+          <h4>SCAN RESULT</h4>
+          <div id="result">Result Here</div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        window.onload = function(){
+          if(sessionStorage.getItem("WinkelwagenNummer") != null){
+            window.location.replace("../InDeWinkel/index.html");
+          } else {
+            CheckLogin();
+          }
+        }
 
+        function onScanSuccess(qrCodeMessage) {
+            document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+        }
+        function onScanError(errorMessage) {
+            //handle scan error
+        }
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "reader", { fps: 10, qrbox: 250 });
+        html5QrcodeScanner.render(onScanSuccess, onScanError);
+
+        function onScanSuccess(decodedText, decodedResult) {
+            // Handle on success condition with the decoded text or result.
+            console.log(`Scan result: ${decodedText}`, decodedResult);
+            let SplittedMessage = decodedText.toString().split(":");
+            console.log(SplittedMessage);
+
+            if(SplittedMessage[0] == 'e-kart'){
+              if(sessionStorage.getItem("KlantID") != null){
+                const KlantIDValue = sessionStorage.getItem("KlantID");
+                var WagenIDN = parseInt(SplittedMessage[1]);
+                var KlantIDN = parseInt(KlantIDValue);
+                let testdata = {id: WagenIDN, klantid: KlantIDN};
+                sessionStorage.setItem("WinkelwagenNummer", SplittedMessage[1]);
+
+                $.ajax({
+                    type: "GET",
+                    url: "./Update.php",
+                    data: testdata,
+                    success: function () {
+                      window.location.replace("../InDeWinkel/index.html");
+                  }
+                })
+              } else {
+                window.location.replace("../../../index.php");
+              }
+            }
+        }
+      </script>
+<html>
