@@ -1,0 +1,33 @@
+.price-tag-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.price-tag-container > .container {
+    background-color: #fff;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.price-tag {
+    font-size: xx-large;
+    font-family: hamburgerBold;
+    margin-bottom: 0;
+}
+
+.price-tag-amount {
+    float: right;
+    margin-right: 4.4rem;
+}
+
+.price-tag-label {
+    float: left;
+    margin-left: 4.4rem;
+}
+
+.customer-data {
+    font-family: hamburger;
+    font-size: large;
+    color: #acacac;
+}

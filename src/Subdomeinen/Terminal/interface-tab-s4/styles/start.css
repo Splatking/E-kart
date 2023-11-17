@@ -1,0 +1,54 @@
+.qr-code-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.qr-code-title {
+    margin: 0;
+    padding-top: 7rem;
+    font-size: 3rem;
+}
+
+.qr-code {
+    margin: 0;
+    align-self: center;
+    width: 300px;
+    height: 300px;
+}
+
+.qr-code-text {
+    font-size: 3rem;
+    margin-right: 30px;
+}
+
+.qr-code-sub-text {
+    font-size: x-large;
+    color: #5900cc;
+}
+
+.qr-code.succes {
+    width: 150px;
+    height: 150px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.qr-popup {
+    width: 396px;
+}
+
+.modal-dialog {
+    margin: 0;
+    left: 371px;
+    top: 158px;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 0;
+    background-color: transparent !important;
+}

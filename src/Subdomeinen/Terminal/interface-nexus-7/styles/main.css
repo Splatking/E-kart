@@ -1,0 +1,32 @@
+@font-face {
+    font-family: hamburgerBold;
+    src: url("../fonts/hamburg-bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: hamburger;
+    src: url("../fonts/hamburg-regular.woff2");
+}
+
+body {
+    font-family: hamburger;
+}
+
+.header-container {
+    position: fixed;
+    width: 100%;
+}
+
+.e-kart-logo {
+    width: 130px;
+    height: 130px;
+}
+
+.time-tag {
+    font-size: x-large;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #acacac;
+}

@@ -1,0 +1,67 @@
+<li href="#" class="list-group-item product" data-toggle="modal">
+    <div class="row product-row">
+        <div class="col-4">
+            <img class="product-image">
+        </div>
+        <div class="col-6">                    
+            <p class="product-name"></p>
+            <p class="product-unit"></p>
+            <p class="product-mention"></p>
+            <img class="product-nutri-score">
+            <div class="product-characteristics-preview"></div>
+        </div>
+        <div class="col-2">
+            <p class="product-price"></p>
+            <span class="badge badge-pill badge-primary product-amount"></span>
+            <p class="product-total-price"></p>
+        </div>
+    </div>
+
+    <div class="modal fade product-info-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content product-popup">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="product-image">
+                        </div>
+                        <div class="col-6">                    
+                            <p class="product-name"></p>
+                            <p class="product-unit"></p>
+                            <p class="product-mention"></p>
+                            <img class="product-nutri-score">
+                        </div>
+                        <div class="col-2">
+                            <p class="product-price"></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="product-title">Omschrijving</p>
+                    <div class="product-description"></div>
+                    <p class="product-sub">Kenmerken</p>
+                    <ul class="product-characteristics list-unstyled "></ul>
+                    <br>
+                    <p class="product-title">Voedingswaarden</p>
+                    <p class="product-nutrition-info">Voedingswaarden</p>
+                    <table class="table">
+                        <thead class="product-nutrition-header">
+                            <tr>
+                                <th scope="col">Soort</th>
+                                <th scope="col" class="product-nutrition-unit"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="product-nutrition-values"></tbody>
+                    </table>
+                    <br>
+                    <p class="product-title">Ingrediënten</p>
+                    <p class="product-ingredients"></p>
+                    <p class="product-sub">Allergie-informatie</p>
+                    <p class="product-allergies"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

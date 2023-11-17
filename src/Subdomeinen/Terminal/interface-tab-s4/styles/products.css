@@ -1,0 +1,160 @@
+p {
+    font-size: large;
+}
+
+table tr td, table tr th { 
+    font-size: large;
+}
+
+.product-placeholder {
+    position: absolute;
+    width: 75%;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 17rem;
+    color: #acacac;
+}
+
+.product {
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 0.5rem;
+    overflow: hidden;
+}
+
+.products {
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-name {
+    font-size: xx-large;
+    font-family: hamburgerBold;
+    margin-bottom: 0;
+}
+
+.product-unit {
+    color: #acacac;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+.product-total-price {
+    font-size: x-large;
+    font-family: hamburgerBold;
+    margin-top: 1rem;
+    float: right;
+}
+
+.product-mention {
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+.product-mention.positive-mention {
+    color: #00ade6;
+}
+
+.product-mention.negative-mention {
+    color: #ff7900;
+}
+
+.product-price {
+    font-size: xx-large;
+    font-family: hamburgerBold;
+    float: right;
+}
+
+.product-amount {
+    font-size: xx-large;
+    font-family: hamburgerBold;
+    float: right;
+}
+
+.product-nutri-score {
+    width: 9rem;
+}
+
+.product-amount {
+    background-color: #5900cc !important;
+}
+
+.product-info {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.product-description > p {
+    margin-bottom: 0.7rem;
+}
+
+.product-nutrition-values > tr >td {
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
+
+.product-popup {
+    width: 800px;
+}
+
+.modal-dialog {
+    margin: 0;
+    left: 169px;
+    top: 81px;
+    transform: translate(-50%, -50%);
+    margin-bottom: 81px;;
+}
+
+.modal-body {
+    padding-top: 2rem;
+}
+
+.characteristics-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.characteristics-text {
+    display: inline;
+}
+
+.characteristics-icon-preview {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.5rem;
+}
+
+.product-characteristics-preview {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 1rem;
+}
+
+.product-title {
+    font-size: xx-large;
+    font-family: hamburgerBold;
+    margin-bottom: 0;
+}
+
+.product-sub {
+    font-size: x-large;
+    font-family: hamburgerBold;
+    margin-bottom: 0;
+}
+
+.product-nutrition-header {
+    font-family: hamburgerBold;
+}
