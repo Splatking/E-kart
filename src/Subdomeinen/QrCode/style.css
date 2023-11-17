@@ -1,0 +1,10 @@
+@font-face {
+    font-family: hamburger;
+    src: url("./src/Fonts/hamburg-regular.woff2") format("woff2");
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: hamburger;
+}
